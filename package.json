@@ -1,0 +1,26 @@
+{
+  "name": "aqa_course_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YausheVladyslav/aqa_course_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YausheVladyslav/aqa_course_api/issues"
+  },
+  "homepage": "https://github.com/YausheVladyslav/aqa_course_api#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
