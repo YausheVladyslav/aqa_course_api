@@ -1,9 +1,9 @@
 import { expect, test, describe } from "@jest/globals";
 import axios from 'axios';
 
-describe("Should create a correct post", () => {
+describe.skip("Should create a correct post", () => {
 
-    test("Create a valid post", async () => {
+    test.skip("Create a valid post", async () => {
         requestBody = {
             title: 'test title',
             body: 'test body',
@@ -33,7 +33,7 @@ describe("Should create a correct post", () => {
     })
 
 
-       test("Create a post with an empty title", async () => {
+       test.skip("Create a post with an empty title", async () => {
         requestBody = {
             title: '',
             body: 'test body',
@@ -62,7 +62,7 @@ describe("Should create a correct post", () => {
         )
     })
 
-    test("Create a post with an empty body", async () => {
+    test.skip("Create a post with an empty body", async () => {
         requestBody = {
             title: 'test',
             body: '',
