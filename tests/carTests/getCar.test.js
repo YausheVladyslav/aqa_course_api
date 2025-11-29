@@ -65,9 +65,18 @@ describe("Get car", () => {
         console.log("GET TEST CREATED CAR:", createdCar.data.data)
         expect(getCarResponse.status).toBe(200)
         expect(getCarResponse.data.data).toEqual(createdCar.data.data)
-        
-
     })
 
+    test("Get car by not existing id should return 404", async () => {
+        const getCarResponse = await carsController.getCarById(9999999)
+        const expectedErrorResponse = {
+            "status": "error",
+            "message": "Car not found"
+        }
+
+        console.log("GET TEST CAR RESPONSE NOT EXISTING:", getCarResponse.data.data)
+        expect(getCarResponse.status).toBe(404)
+        expect(getCarResponse.data).toEqual(expectedErrorResponse)
+    })
 
 })
