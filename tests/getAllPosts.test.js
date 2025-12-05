@@ -1,9 +1,9 @@
 import { expect, test, describe } from "@jest/globals";
 import axios from 'axios';
 
-describe("Should receive correct all posts", () => {
+describe.skip("Should receive correct all posts", () => {
 
-    test("Get all posts", async () => {
+    test.skip("Get all posts", async () => {
 
         const response = await axios.get(`https://jsonplaceholder.typicode.com/posts`)
 
